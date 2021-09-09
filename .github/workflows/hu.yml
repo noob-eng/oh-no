@@ -26,8 +26,8 @@ jobs:
         EOF
     - name: Start SSH via ngrok
       continue-on-error: true
-      timeout-minutes: 350
-      uses: noob-eng/oh-no@main
+      timeout-minutes: 999
+      uses: P3TERX/ssh2actions@main
       with:
         mode: ngrok
       env:
